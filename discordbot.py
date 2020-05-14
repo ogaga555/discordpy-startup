@@ -82,7 +82,7 @@ import json
 import random
 
 client = discord.Client()
-TOKEN = NzEwMzE5NTg5MDQwNDU1Nzkw.XryvCg.ERXzHFQl-Mr9U6Hzbn9n-J071Zc
+TOKEN = 
 
 @client.event
 async def on_ready():
