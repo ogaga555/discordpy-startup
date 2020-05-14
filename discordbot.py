@@ -82,7 +82,7 @@ import json
 import random
 
 client = discord.Client()
-TOKEN = "ここにトークンを書いてね"
+TOKEN = NzEwMzE5NTg5MDQwNDU1Nzkw.XryvCg.ERXzHFQl-Mr9U6Hzbn9n-J071Zc
 
 @client.event
 async def on_ready():
@@ -94,7 +94,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     # 「雲さん」で始まるか調べる
-    if message.content.startswith("1_1さん"):
+    if message.content.startswith("nbotさん"):
         # 送り主がBotだった場合反応したくないので
         if client.user != message.author:
             try:
@@ -104,13 +104,13 @@ async def on_message(message):
                 print(type(text))
 
                 ################# Don't touch. ################
-                kumo_san = 1_1
+                kumo_san = Nbot
                 ################# Don't touch. ################
 
                 msg =  kumo_san + user_name + 'さん '
                 #msg = user_name + 'さん '
 
-                if text == ('1_1'):
+                if text == ('nbot'):
                     msg = 'はい！ご用でしょうか！'
                 elif text.find('おは') > -1:
                     msg += 'おはようございます！'
@@ -121,7 +121,7 @@ async def on_message(message):
                 elif text.find('おつ') > -1 or text.find('疲') > -1 or text.find('お先') > -1 or text.find('おち') > -1 or text.find('落ち') > -1:
                     msg += 'おつかれさまです〜'
                 elif text.find('自己紹介して') > -1:
-                    msg = 'はい！はじめまして。おががさんに作られたヒヨッ子botの1_1と申します。趣味は素数を数えることです。皆さんのお役に立てすようにがんばりますので、どうぞよろしくお願いします！:cloud:'
+                    msg = 'はい！はじめまして。おががさんに作られたヒヨッ子botのnbotと申します。趣味は素数を数えることです。皆さんのお役に立てすようにがんばりますので、どうぞよろしくお願いします！:cloud:'
                 elif text.find('help') > -1 or text.find('-h') > -1:
                     msg += 'https://discordapp.com/channels/407045885281828877/407050154315874315/558382007433035786'
                 elif text.find('って何') > -1:
